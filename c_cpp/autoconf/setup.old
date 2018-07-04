@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+libtoolize
+aclocal && automake --add-missing && autoreconf && ./configure LDFLAGS="-static"
+make
+
+read -n 1 -s -r -p "Press any key to continue"
+echo -e ""
+
