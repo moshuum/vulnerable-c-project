@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+rm build -rf
+
+mkdir -p  build && cd build && cmake .. && make
+
+
+read -n 1 -s -r -p "Press any key to continue"
+echo -e ""
+
+cd ..
